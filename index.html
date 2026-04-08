@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Business Help</title>
+    <meta
+      name="description"
+      content="Simple Business Help: practical marketing, systems, and growth support for small businesses."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+
+    <header class="topbar">
+      <div class="brand">simplebusinesshelp.md</div>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#results">Results</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="workspace">
+      <aside class="sidebar" aria-hidden="true">
+        <p class="sidebar-title">Explorer</p>
+        <ul>
+          <li class="active">README.md</li>
+          <li>services.md</li>
+          <li>results.md</li>
+          <li>contact.md</li>
+        </ul>
+      </aside>
+
+      <article class="editor" id="top">
+        <div class="editor-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="filename">README.md</span>
+        </div>
+
+        <section class="pane reveal">
+          <h1><span class="token-hash">#</span> Simple Business Help</h1>
+          <p class="lead">
+            We help small businesses fix messy operations, improve marketing clarity, and build
+            systems that actually scale.
+          </p>
+          <p>
+            <span class="token-bold">No fluff.</span> <span class="token-code">Just practical support</span>
+            with clear weekly deliverables.
+          </p>
+          <a class="cta" href="#contact">Start a Project</a>
+        </section>
+
+        <section class="pane reveal" id="services">
+          <h2><span class="token-hash">##</span> Services</h2>
+          <div class="code-block">
+            <p><span class="line-comment">// Choose the support you need now</span></p>
+            <p><span class="line-key">-</span> Growth Strategy Sprints</p>
+            <p><span class="line-key">-</span> Conversion-Focused Website Copy</p>
+            <p><span class="line-key">-</span> Automation & Workflow Cleanup</p>
+            <p><span class="line-key">-</span> Fractional Marketing Operations</p>
+          </div>
+        </section>
+
+        <section class="pane reveal" id="process">
+          <h2><span class="token-hash">##</span> Process</h2>
+          <ol class="steps">
+            <li>
+              <h3>1. Audit</h3>
+              <p>Understand your bottlenecks, customer journey, and current systems.</p>
+            </li>
+            <li>
+              <h3>2. Build</h3>
+              <p>Implement the highest-impact fixes first and document everything.</p>
+            </li>
+            <li>
+              <h3>3. Train</h3>
+              <p>Hand off clean workflows your team can run without constant firefighting.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="pane reveal" id="results">
+          <h2><span class="token-hash">##</span> Results Snapshot</h2>
+          <div class="results-grid">
+            <div class="metric">
+              <p class="metric-value">+42%</p>
+              <p>Lead conversion after messaging rewrite</p>
+            </div>
+            <div class="metric">
+              <p class="metric-value">-9 hrs</p>
+              <p>Saved weekly via automation cleanup</p>
+            </div>
+            <div class="metric">
+              <p class="metric-value">3x</p>
+              <p>Faster onboarding with documented systems</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="pane reveal" id="contact">
+          <h2><span class="token-hash">##</span> Contact</h2>
+          <p>
+            Send a quick overview of your business and what feels stuck. We will respond with
+            next steps within 2 business days.
+          </p>
+          <a class="cta" href="mailto:hello@simplebusinesshelp.com">hello@simplebusinesshelp.com</a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>Copyright <span id="year"></span> Simple Business Help</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
