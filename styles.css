@@ -89,6 +89,10 @@ body {
   color: var(--accent-2);
 }
 
+.site-nav a[aria-current="page"] {
+  color: var(--accent);
+}
+
 .workspace {
   width: min(1120px, 92vw);
   margin: 2rem auto;
@@ -169,6 +173,10 @@ body {
 
 .editor {
   padding-bottom: 1rem;
+}
+
+.editor-full {
+  grid-column: 1 / -1;
 }
 
 .pane {
@@ -280,6 +288,51 @@ p {
   font-weight: 700;
 }
 
+.contact-form {
+  margin-top: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  margin: 0.75rem 0 0.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--panel-edge);
+  border-radius: 0.45rem;
+  background: #0a141b;
+  color: var(--text);
+  font: inherit;
+  padding: 0.55rem 0.65rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.contact-form .cta {
+  margin-top: 1rem;
+  font: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.optional {
+  color: var(--muted);
+}
+
+.honeypot {
+  display: none;
+}
+
 .footer {
   width: min(1120px, 92vw);
   margin: 1rem auto 2rem;
@@ -287,6 +340,15 @@ p {
   color: var(--muted);
   font-size: 0.82rem;
   padding-top: 0.8rem;
+}
+
+.footer a {
+  color: var(--muted);
+}
+
+.footer a:hover,
+.footer a:focus-visible {
+  color: var(--accent-2);
 }
 
 .reveal {
