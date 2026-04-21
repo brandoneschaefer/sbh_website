@@ -9,6 +9,15 @@ Markdown-inspired redesign for simplebusinesshelp.com.
 2. Open:
 	`http://localhost:8000`
 
+## Contact form setup (Formspree)
+
+1. Create a new form in Formspree and copy the endpoint URL (looks like `https://formspree.io/f/xxxxabcd`).
+2. In `/contact.html`, replace:
+	`https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID`
+	with your real Formspree endpoint.
+3. (Recommended) In Formspree settings, enable extra spam protection (reCAPTCHA/Turnstile).
+4. Optional: update `_next` in `/contact.html` if your final domain changes.
+
 ## Custom domain (GitHub Pages)
 
 1. In GitHub repo settings, open **Pages**.
