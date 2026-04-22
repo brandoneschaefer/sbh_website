@@ -21,7 +21,7 @@ if (menuToggle && nav) {
   });
 }
 
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
+document.querySelectorAll('.site-nav a[href^="#"], .hero a[href^="#"], .site-footer a[href^="#"]').forEach((link) => {
   link.addEventListener('click', (event) => {
     const hash = link.getAttribute('href');
     if (!hash || hash === '#') {
