@@ -3,7 +3,11 @@
   --surface: #ffffff;
   --surface-soft: #f1f5fb;
   --line: #d8e3f2;
+  --line-soft: #d3e1f4;
+  --line-strong: rgba(216, 227, 242, 0.85);
   --text: #0a2540;
+  --text-soft: #5a6f89;
+  --text-strong: #16324e;
   --muted: #425466;
   --primary: #635bff;
   --primary-deep: #473dff;
@@ -53,7 +57,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid rgba(216, 227, 242, 0.85);
+  border-bottom: 1px solid var(--line-strong);
   backdrop-filter: blur(12px);
   background: rgba(248, 251, 255, 0.82);
 }
@@ -105,7 +109,7 @@ body {
 
 .eyebrow {
   margin: 0 0 0.85rem;
-  color: #5a6f89;
+  color: var(--text-soft);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.77rem;
@@ -200,7 +204,7 @@ section[id],
   border-radius: 999px;
   padding: 0.52rem 0.8rem;
   background: rgba(255, 255, 255, 0.75);
-  color: #5a6f89;
+  color: var(--text-soft);
   font-weight: 600;
   font-size: 0.85rem;
 }
@@ -235,7 +239,7 @@ section[id],
 }
 
 .stat-card {
-  border: 1px solid #d3e1f4;
+  border: 1px solid var(--line-soft);
   border-radius: 18px;
   padding: 1rem;
   background: linear-gradient(165deg, #ffffff, #eef5ff);
@@ -261,7 +265,7 @@ section[id],
   background: var(--surface);
   box-shadow: var(--shadow);
   padding: 1.3rem;
-  color: #16324e;
+  color: var(--text-strong);
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -269,14 +273,14 @@ section[id],
 .quote-card cite {
   display: block;
   margin-top: 1rem;
-  color: #5a6f89;
+  color: var(--text-soft);
   font-style: normal;
   font-size: 0.95rem;
 }
 
 .final-cta {
   border-radius: 26px;
-  border: 1px solid #d3e1f4;
+  border: 1px solid var(--line-soft);
   padding: clamp(2rem, 5vw, 3rem);
   background:
     radial-gradient(730px 240px at 12% 0, rgba(99, 91, 255, 0.12), transparent 70%),
