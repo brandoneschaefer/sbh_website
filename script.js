@@ -35,6 +35,5 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
     event.preventDefault();
     target.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
-    history.replaceState(null, '', hash);
   });
 });
