@@ -9,6 +9,7 @@
   --primary-deep: #473dff;
   --ring: #0a2540;
   --shadow: 0 20px 45px rgba(15, 35, 95, 0.12);
+  --header-offset: 92px;
 }
 
 * {
@@ -141,7 +142,7 @@ p {
 
 section[id],
 #top {
-  scroll-margin-top: 92px;
+  scroll-margin-top: var(--header-offset);
 }
 
 .hero-cta {
