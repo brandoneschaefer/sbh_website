@@ -9,15 +9,19 @@
   --primary-deep: #473dff;
   --ring: #0a2540;
   --shadow: 0 20px 45px rgba(15, 35, 95, 0.12);
-  --header-offset: 92px;
+  --max-width: 1120px;
+  --header-height: 74px;
+  --header-offset: calc(var(--header-height) + 8px);
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
@@ -41,7 +45,7 @@ body {
 }
 
 .container {
-  width: min(1120px, 92vw);
+  width: min(var(--max-width), 92vw);
   margin: 0 auto;
 }
 
@@ -55,7 +59,7 @@ body {
 }
 
 .nav-wrap {
-  min-height: 74px;
+  min-height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
