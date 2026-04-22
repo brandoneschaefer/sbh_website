@@ -6,124 +6,141 @@
     <title>Simple Business Help</title>
     <meta
       name="description"
-      content="Simple Business Help: practical marketing, systems, and growth support for small businesses."
+      content="Simple Business Help helps small teams modernize operations, marketing, and growth systems with practical advisory and implementation support."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="grain"></div>
-
-    <header class="topbar">
-      <div class="brand">simplebusinesshelp.com</div>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" class="site-nav">
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#results">Results</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+    <div class="page-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top">Simple Business Help</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="#solutions">Solutions</a>
+          <a href="#platform">Platform</a>
+          <a href="#customers">Customers</a>
+          <a href="#start">Get started</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="workspace">
-      <aside class="sidebar" aria-hidden="true">
-        <p class="sidebar-title">Explorer</p>
-        <ul>
-          <li class="active">README.md</li>
-          <li>services.md</li>
-          <li>results.md</li>
-          <li>contact.md</li>
-        </ul>
-      </aside>
-
-      <article class="editor" id="top">
-        <div class="editor-bar">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <span class="filename">README.md</span>
+    <main id="top">
+      <section class="hero container section">
+        <p class="eyebrow">Modern systems for growing teams</p>
+        <h1>Build a faster business engine for your next stage of growth.</h1>
+        <p class="hero-copy">
+          We help founder-led teams unify strategy, marketing operations, and automation into one
+          practical roadmap you can execute week by week.
+        </p>
+        <div class="hero-cta">
+          <a class="button button-primary" href="#start">Book a strategy call</a>
+          <a class="button button-secondary" href="#solutions">Explore solutions</a>
         </div>
+        <ul class="trust-strip" aria-label="Trusted by growing teams in many industries">
+          <li>Northfield Studio</li>
+          <li>Harbor &amp; Pine</li>
+          <li>Velocity Retail</li>
+          <li>Atlas Health Group</li>
+          <li>Willow Industrial</li>
+        </ul>
+      </section>
 
-        <section class="pane reveal">
-          <h1><span class="token-hash">#</span> Simple Business Help</h1>
-          <p class="lead">
-            We help businesses fix messy operations, unify their tech stack, and build systems that scale — powered by Agentic Autonomous ThoughtCode.
-          </p>
+      <section id="solutions" class="container section">
+        <div class="section-title-wrap">
+          <p class="eyebrow">Solutions</p>
+          <h2>Everything needed to ship smarter, not louder.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <h3>Growth strategy sprints</h3>
+            <p>90-day planning cycles with clear priorities, owners, and measurable outcomes.</p>
+          </article>
+          <article class="card">
+            <h3>Marketing operations</h3>
+            <p>Clean handoffs from lead capture to CRM to follow-up without spreadsheet chaos.</p>
+          </article>
+          <article class="card">
+            <h3>Automation architecture</h3>
+            <p>Practical workflows that remove repetitive tasks while keeping the human touch.</p>
+          </article>
+          <article class="card">
+            <h3>Positioning and messaging</h3>
+            <p>Sharper homepage and offer copy that turns curiosity into qualified conversations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="platform" class="container section product-highlight">
+        <div>
+          <p class="eyebrow">Product highlights</p>
+          <h2>An operating system for your commercial team.</h2>
           <p>
-            <span class="token-bold">No fluff.</span> <span class="token-code">Just practical support</span>
-            with clear weekly deliverables.
+            We map your current process, identify friction, and ship improvements in weekly
+            releases so your team sees progress immediately.
           </p>
-          <a class="cta" href="contact.html">Start a Project</a>
-        </section>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <p class="stat-value">42%</p>
+            <p>Average lift in lead-to-call conversion after messaging and flow updates.</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-value">9 hrs</p>
+            <p>Weekly operational time reclaimed through focused automations.</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-value">3.4x</p>
+            <p>Faster campaign launch velocity with reusable systems and templates.</p>
+          </article>
+        </div>
+      </section>
 
-        <section class="pane reveal" id="services">
-          <h2><span class="token-hash">##</span> Services</h2>
-          <div class="code-block">
-            <p><span class="line-comment">// Choose the support you need now</span></p>
-            <p><span class="line-key">-</span> Growth Strategy Sprints</p>
-            <p><span class="line-key">-</span> Conversion-Focused Website Copy</p>
-            <p><span class="line-key">-</span> Automation & Workflow Cleanup</p>
-            <p><span class="line-key">-</span> Fractional Marketing Operations</p>
-          </div>
-        </section>
+      <section id="customers" class="container section">
+        <div class="section-title-wrap">
+          <p class="eyebrow">Testimonials</p>
+          <h2>Built for real teams with real constraints.</h2>
+        </div>
+        <div class="quote-grid">
+          <blockquote class="quote-card">
+            “The roadmap removed guesswork. We finally had one clear plan from lead generation to
+            onboarding.”
+            <cite>— COO, regional services brand</cite>
+          </blockquote>
+          <blockquote class="quote-card">
+            “Within a month we replaced four disconnected tools and gave our team back hours every
+            week.”
+            <cite>— Founder, B2B consultancy</cite>
+          </blockquote>
+        </div>
+      </section>
 
-        <section class="pane reveal" id="process">
-          <h2><span class="token-hash">##</span> Process</h2>
-          <ol class="steps">
-            <li>
-              <h3>1. Audit</h3>
-              <p>Understand your bottlenecks, customer journey, and current systems.</p>
-            </li>
-            <li>
-              <h3>2. Build</h3>
-              <p>Implement the highest-impact fixes first and document everything.</p>
-            </li>
-            <li>
-              <h3>3. Train</h3>
-              <p>Hand off clean workflows your team can run without constant firefighting.</p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="pane reveal" id="results">
-          <h2><span class="token-hash">##</span> Results Snapshot</h2>
-          <div class="results-grid">
-            <div class="metric">
-              <p class="metric-value">+42%</p>
-              <p>Lead conversion after messaging rewrite</p>
-            </div>
-            <div class="metric">
-              <p class="metric-value">-9 hrs</p>
-              <p>Saved weekly via automation cleanup</p>
-            </div>
-            <div class="metric">
-              <p class="metric-value">3x</p>
-              <p>Faster onboarding with documented systems</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="pane reveal" id="contact">
-          <h2><span class="token-hash">##</span> Contact</h2>
-          <p>
-            Send a quick overview of your business and what feels stuck. We will respond with
-            next steps within 2 business days.
-          </p>
-          <a class="cta" href="contact.html">Open Contact Form</a>
-        </section>
-      </article>
+      <section id="start" class="container section final-cta">
+        <p class="eyebrow">Ready to simplify?</p>
+        <h2>Start with a focused strategy session.</h2>
+        <p>
+          Tell us where growth feels stuck, and we will propose the highest-impact next steps for
+          your team.
+        </p>
+        <a class="button button-primary" href="mailto:hello@simplebusinesshelp.com"
+          >Email hello@simplebusinesshelp.com</a
+        >
+      </section>
     </main>
 
-    <footer class="footer">
-      <p>
-        Copyright <span id="year"></span> Simple Business Help ·
-        <a href="contact.html">Contact</a>
-      </p>
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Simple Business Help</p>
+        <a href="#top">Back to top</a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
