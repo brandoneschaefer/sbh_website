@@ -1,6 +1,6 @@
 # sbh_website
 
-Single-page marketing homepage for simplebusinesshelp.com.
+Marketing homepage and policies pages for simplebusinesshelp.com.
 
 ## Local preview
 
@@ -12,7 +12,22 @@ Single-page marketing homepage for simplebusinesshelp.com.
 ## Site structure
 
 - Homepage: `/index.html`
-- Legacy routes (`/contact.html`, `/thanks.html`) redirect back to the homepage.
+- Policies: `/policies/` (Privacy Policy, Terms of Service, and contact details)
+- Legacy legal routes (`/privacy-policy/`, `/terms/`) redirect to the policies page
+- Legacy routes (`/contact.html`, `/thanks.html`) redirect back to the homepage
+
+## Policies subdomain
+
+GitHub Pages serves one custom domain. The policies page is published at
+`https://simplebusinesshelp.com/policies/`.
+
+To make `https://policies.simplebusinesshelp.com` open that page, add a
+**subdomain forward** in GoDaddy (the current DNS host):
+
+1. Open the `simplebusinesshelp.com` DNS / forwarding settings.
+2. Add a subdomain forward for `policies`.
+3. Destination: `https://simplebusinesshelp.com/policies/`
+4. Use a permanent (301) redirect and **forward only** (do not mask).
 
 ## Custom domain (GitHub Pages)
 

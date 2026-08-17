@@ -2,7 +2,8 @@ const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');
 const year = document.getElementById('year');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const anchorSelectors = '.site-nav a[href^="#"], .hero a[href^="#"], .site-footer a[href^="#"]';
+const anchorSelectors =
+  '.site-nav a[href^="#"], .hero a[href^="#"], .site-footer a[href^="#"], .policy-toc a[href^="#"]';
 
 if (year) {
   year.textContent = new Date().getFullYear();
