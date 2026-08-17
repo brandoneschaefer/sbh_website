@@ -320,7 +320,12 @@ section[id],
 }
 
 .policy-hero h1 {
-  max-width: 16ch;
+  max-width: 14ch;
+}
+
+article[id],
+.policy-card h3[id] {
+  scroll-margin-top: var(--header-offset);
 }
 
 .policy-meta {
@@ -380,6 +385,23 @@ section[id],
 
 .policy-card strong {
   color: var(--text-strong);
+}
+
+.policy-card ul {
+  margin: 0.9rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.policy-card li + li {
+  margin-top: 0.75rem;
+}
+
+.policy-caps {
+  display: inline;
+  color: var(--text-strong);
+  font-size: 0.96em;
+  letter-spacing: 0.01em;
 }
 
 .policy-contact-list {

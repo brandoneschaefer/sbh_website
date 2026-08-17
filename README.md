@@ -12,7 +12,7 @@ Marketing homepage and policies pages for simplebusinesshelp.com.
 ## Site structure
 
 - Homepage: `/index.html`
-- Policies: `/policies/` (Privacy Policy, Terms of Service, and contact details)
+- Policies: `/policies/` (Terms and Conditions, Privacy Policy, and contact details)
 - Legacy legal routes (`/privacy-policy/`, `/terms/`) redirect to the policies page
 - Legacy routes (`/contact.html`, `/thanks.html`) redirect back to the homepage
 
